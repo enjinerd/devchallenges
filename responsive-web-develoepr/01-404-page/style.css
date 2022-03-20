@@ -1,0 +1,145 @@
+:root {
+  color: #333333;
+}
+
+header h1 {
+  font-family: 'Inconsolata';
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.alert {
+  font-family: 'Space Mono';
+  display: flex;
+}
+
+.alert-head {
+  font-weight: bold;
+}
+
+.alert-back-button {
+  text-transform: uppercase;
+  background: #333333;
+  color: #ffffff;
+  font-weight: bold;
+  overflow: visible;
+  font-family: 'Space Mono';
+  border: none;
+}
+
+footer {
+  font-family: 'Montserrat';
+  font-weight: 500;
+  color: #bdbdbd;
+  text-align: center;
+}
+
+/*Mobile screen size*/
+@media only screen and (max-width: 480px) {
+  header {
+    padding: 1.25rem 1.5rem;
+  }
+  header h1 {
+    font-size: 1.5em;
+  }
+
+  .image-container {
+    padding-left: 2.75rem;
+    padding-right: 2.75rem;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  .alert {
+    flex-direction: column;
+    padding-left: 1.5rem;
+    padding-right: 2.5rem;
+  }
+
+  .alert-head {
+    font-size: 3rem;
+  }
+
+  .alert-msg {
+    font-size: 1.125rem;
+  }
+
+  .alert-back-button {
+    padding: 1.5rem 0.85rem;
+    font-size: 0.675rem;
+    margin-top: 4.125rem;
+    width: 60%;
+  }
+
+  main {
+    margin-top: 6.813rem;
+    margin-bottom: 9.688rem;
+  }
+
+  footer {
+    font-size: 0.875rem;
+  }
+}
+
+/* Desktop styling */
+@media only screen and (min-width: 481px) {
+  body {
+    height: 100vh;
+    overflow: hidden;
+  }
+  header {
+    padding: 2.5rem 3.5rem;
+  }
+
+  main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 9.813rem;
+  }
+
+  .image-container {
+    padding-left: 3.75rem;
+    padding-right: 3.75rem;
+  }
+
+  img {
+    height: auto;
+    width: 539px;
+  }
+
+  .alert {
+    flex-direction: column;
+    padding: 0 3.625rem;
+  }
+
+  .alert-head {
+    font-size: 4rem;
+  }
+
+  .alert-msg {
+    font-size: 1.25rem;
+  }
+
+  .alert-back-button {
+    padding: 1.5rem 2.65rem;
+    font-size: 1rem;
+    margin-top: 3.75rem;
+    width: 40%;
+  }
+
+  main {
+    margin-top: 4.313rem;
+  }
+
+  footer {
+    font-size: 0.875rem;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+  }
+}
